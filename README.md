@@ -1,36 +1,75 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚀 Portafolio Personal — Luis
 
-## Getting Started
+> Portafolio de presentación profesional diseñado para búsqueda de empleo. Muestra mi experiencia, stack tecnológico y proyectos destacados de forma visual e interactiva.
 
-First, run the development server:
+[![Next.js](https://img.shields.io/badge/Next.js-15-black?style=flat-square&logo=next.js)](https://nextjs.org)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5-blue?style=flat-square&logo=typescript)](https://www.typescriptlang.org)
+[![TailwindCSS](https://img.shields.io/badge/TailwindCSS-4-38bdf8?style=flat-square&logo=tailwindcss)](https://tailwindcss.com)
+[![Framer Motion](https://img.shields.io/badge/Framer_Motion-animaciones-ff0055?style=flat-square&logo=framer)](https://www.framer.com/motion)
+
+---
+
+## ✨ ¿Qué incluye?
+
+- **Hero** — Presentación principal con nombre, rol y links de contacto
+- **Experiencia & Stack** — Historial laboral y tecnologías dominadas
+- **Proyectos** — Trabajos destacados con links a demo y código
+- **Contacto** — Formulario directo para iniciar una conversación
+- **Animaciones scroll reveal** — Cada sección aparece suavemente al hacer scroll
+
+---
+
+## 🛠️ Tecnologías utilizadas
+
+| Tecnología | Uso |
+|---|---|
+| Next.js 15 (App Router) | Framework principal |
+| TypeScript | Tipado estático |
+| Tailwind CSS v4 | Estilos y diseño responsivo |
+| Framer Motion | Animaciones fluidas |
+| Lucide React | Iconografía |
+
+---
+
+## 🚀 Correr en local
 
 ```bash
+# Instalar dependencias
+npm install
+
+# Iniciar servidor de desarrollo
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Abre [http://localhost:3000](http://localhost:3000) en tu navegador.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📁 Estructura del proyecto
 
-## Learn More
+```
+src/
+├── app/
+│   ├── layout.tsx       # Layout principal y fuentes
+│   ├── page.tsx         # Página de inicio
+│   └── globals.css      # Estilos globales
+└── components/
+    ├── Navbar.tsx        # Navegación
+    ├── Hero.tsx          # Sección principal
+    ├── ExperienceSkills.tsx  # Experiencia y stack
+    ├── Projects.tsx      # Proyectos
+    ├── Contact.tsx       # Formulario de contacto
+    └── Footer.tsx        # Pie de página
+```
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📬 Contacto
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+¿Interesado en trabajar juntos? Puedes contactarme a través del formulario en el portafolio o directamente por:
 
-## Deploy on Vercel
+- **GitHub:** [github.com/Luishi9](https://github.com/Luishi9)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+*Construido con dedicación para presentar mi perfil profesional al mundo.*
