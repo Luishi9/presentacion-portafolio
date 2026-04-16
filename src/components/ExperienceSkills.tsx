@@ -20,6 +20,14 @@ const experience = [
       "Desarrollo y actualización de aplicaciones web para gestión y ventas de centros de impresión, optimizando procesos internos y mejorando la experiencia del usuario, capacitación continua a 4 centros de impresión en diferentes puntos de la republica mexicana.",
     highlight: true,
   },
+  {
+    period: "2025 — 2026",
+    title: "Freelance, Full Stack Developer",
+    company: "Puebla, Mexico",
+    description:
+      "Desarrollo de aplicaciones web personalizadas para clientes diversos, utilizando tecnologías modernas para crear soluciones eficientes y escalables, incluyendo sitios de comercio electrónico y paneles de administración",
+    highlight: true,
+  },
 ];
 
 const skills = [
@@ -27,7 +35,10 @@ const skills = [
   "React / Next.js",
   "Node.js",
   "TailwindCSS",
-  "Bootstrap"
+  "Bootstrap",
+  "CSS3",
+  "HTML5",
+  "JavaScript",
 ];
 
 const fadeUp = {
@@ -56,10 +67,10 @@ export default function ExperienceSkills() {
           className="mb-20 space-y-4"
         >
           <span className="font-[family-name:var(--font-space-grotesk)] text-[#81ecff] uppercase tracking-[0.3em] text-xs">
-            Capabilities
+            Capacidades
           </span>
           <h2 className="font-[family-name:var(--font-manrope)] text-5xl font-bold text-[#dee5ff]">
-            Experience &amp; Stack
+            Experiencia &amp; Habilidades
           </h2>
         </motion.div>
 
@@ -76,7 +87,7 @@ export default function ExperienceSkills() {
             className="bento-card md:col-span-8 bg-[#0f1930] p-8 rounded-xl overflow-hidden"
           >
             <h3 className="font-[family-name:var(--font-space-grotesk)] text-xs text-[#a3aac4] uppercase mb-8 tracking-widest">
-              Selected Experience
+              Experiencia Academica y Laboral
             </h3>
             <div className="space-y-12">
               {experience.map((job, i) => (
@@ -131,8 +142,8 @@ export default function ExperienceSkills() {
             <div className="mt-12 p-5 bg-[#141f38] rounded-lg">
               <Terminal size={20} className="text-[#81ecff] mb-2" />
               <p className="text-xs font-[family-name:var(--font-space-grotesk)] text-[#a3aac4] leading-relaxed">
-                Always learning. Currently exploring Rust for high-performance
-                backend utility tools.
+                Siempre aprendiendo. Actualmente explorando Next.js 15 para desarrollo web de última generación, 
+                con tailwindcss 3.3 para estilos modernos y eficientes.
               </p>
             </div>
           </motion.div>

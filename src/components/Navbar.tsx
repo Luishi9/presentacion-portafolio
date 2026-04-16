@@ -7,15 +7,15 @@ import { Menu, X } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 const navLinks = [
-  { label: "Home", href: "#home" },
-  { label: "Projects", href: "#projects" },
-  { label: "Experience", href: "#experience" },
-  { label: "Skills", href: "#skills" },
-  { label: "Contact", href: "#contact" },
+  { label: "Inicio", href: "#home" },
+  { label: "Proyectos", href: "#projects" },
+  { label: "Experiencia", href: "#experience" },
+  { label: "Habilidades", href: "#skills" },
+  { label: "Contacto", href: "#contact" },
 ];
 
 export default function Navbar() {
-  const [active, setActive] = useState("Home");
+  const [active, setActive] = useState("Inicio");
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -40,7 +40,7 @@ export default function Navbar() {
           href="#home"
           className="text-xl font-extrabold tracking-tighter text-[#dee5ff] font-[family-name:var(--font-manrope)] hover:text-primary transition-colors"
         >
-          ARCHITECT.IO
+          PLPWEBS
         </Link>
 
         {/* Desktop Links */}
@@ -67,7 +67,7 @@ export default function Navbar() {
           href="#contact"
           className="hidden md:inline-flex btn-gradient text-[#003840] px-6 py-2 rounded-lg font-[family-name:var(--font-space-grotesk)] font-bold text-sm"
         >
-          Hire Me
+          Contactame
         </a>
 
         {/* Mobile Toggle */}
@@ -106,7 +106,7 @@ export default function Navbar() {
               href="#contact"
               className="btn-gradient text-[#003840] px-5 py-2.5 rounded-lg font-[family-name:var(--font-space-grotesk)] font-bold text-sm text-center"
             >
-              Hire Me
+              Contactame
             </a>
           </motion.div>
         )}

@@ -30,7 +30,7 @@ export default function Hero() {
             className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-[#0f1930] border border-[#40485d]/20 font-[family-name:var(--font-space-grotesk)] text-sm text-[#81ecff]"
           >
             <span className="w-2 h-2 rounded-full bg-[#81ecff] animate-pulse" />
-            Available for new projects
+            Disponible para nuevos proyectos
           </motion.div>
 
           {/* Headline */}
@@ -56,9 +56,9 @@ export default function Hero() {
             animate="show"
             className="font-[family-name:var(--font-inter)] text-lg text-[#a3aac4] max-w-lg leading-relaxed"
           >
-            Full-stack engineer specializing in building resilient,
-            high-performance web systems. I treat every line of code as a
-            structural foundation for excellence.
+            Ingeniero full-stack especializado en construir sistemas web resilientes 
+            y de alto rendimiento. Trato cada línea de código como una base estructural
+            para la excelencia.
           </motion.p>
 
           {/* Buttons */}
@@ -73,13 +73,13 @@ export default function Hero() {
               href="#projects"
               className="btn-gradient text-[#003840] px-8 py-4 rounded-[4px] font-[family-name:var(--font-space-grotesk)] font-bold tracking-wide text-sm"
             >
-              VIEW PROJECTS
+              VER PROYECTOS
             </a>
             <a
               href="#contact"
               className="btn-tertiary font-[family-name:var(--font-space-grotesk)] text-[#dee5ff] hover:text-[#81ecff] transition-colors text-sm pb-0.5"
             >
-              GET IN TOUCH
+              PONTE EN CONTACTO
             </a>
           </motion.div>
         </div>
@@ -109,7 +109,7 @@ export default function Hero() {
               3+
             </div>
             <div className="font-[family-name:var(--font-inter)] text-xs text-[#a3aac4] uppercase tracking-widest mt-1">
-              Years Experience
+              AÑOS DE EXPERIENCIA
             </div>
           </div>
         </motion.div>
