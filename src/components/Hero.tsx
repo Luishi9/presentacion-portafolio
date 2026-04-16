@@ -8,7 +8,7 @@ const fadeUp = {
   show: (i: number) => ({
     opacity: 1,
     y: 0,
-    transition: { duration: 0.7, delay: i * 0.12, ease: [0.22, 1, 0.36, 1] },
+    transition: { duration: 0.7, delay: i * 0.12, ease: [0.22, 1, 0.36, 1] as [number, number, number, number] },
   }),
 };
 
@@ -41,11 +41,11 @@ export default function Hero() {
             animate="show"
             className="font-[family-name:var(--font-manrope)] text-6xl md:text-8xl font-extrabold tracking-tight leading-[0.9]"
           >
-            <span className="text-[#dee5ff]">CRAFTING</span>
+            <span className="text-[#dee5ff]">LUIS</span>
             <br />
-            <span className="text-[#81ecff]">DIGITAL</span>
+            <span className="text-[#81ecff]">EDUARDO</span>
             <br />
-            <span className="text-[#dee5ff]">ARCHITECTURE.</span>
+            <span className="text-[#dee5ff]">CRUZ RUBIN</span>
           </motion.h1>
 
           {/* Subtitle */}
@@ -95,7 +95,7 @@ export default function Hero() {
           <div className="aspect-square rounded-2xl bg-[#0f1930] overflow-hidden relative group">
             <div className="absolute inset-0 bg-gradient-to-tr from-[#81ecff]/20 to-transparent z-10" />
             <Image
-              src="https://images.unsplash.com/photo-1629904853893-c2c8981a1dc5?w=800&q=80"
+              src="/img/yo.png"
               alt="Modern developer workspace"
               fill
               className="object-cover grayscale group-hover:grayscale-0 transition-all duration-700"
@@ -106,7 +106,7 @@ export default function Hero() {
           {/* Stats card */}
           <div className="absolute -bottom-6 -left-6 bg-[#141f38] p-6 rounded-xl border border-[#40485d]/10 shadow-2xl">
             <div className="font-[family-name:var(--font-space-grotesk)] text-[#81ecff] text-4xl font-bold">
-              5+
+              3+
             </div>
             <div className="font-[family-name:var(--font-inter)] text-xs text-[#a3aac4] uppercase tracking-widest mt-1">
               Years Experience

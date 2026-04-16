@@ -6,23 +6,51 @@ import { Link2, Code2 } from "lucide-react";
 
 const projects = [
   {
-    title: "NEON QUANTUM",
+    title: "EL OVNI",
     tags: ["Next.js", "Web3"],
     description:
       "A decentralized finance dashboard for tracking real-time asset performance with custom alerting systems.",
-    image:
-      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80",
-    href: "#",
+    image:"/img/proyectos/elovni.png",
+    href: "https://elovni.netlify.app/login",
     code: "#",
   },
   {
-    title: "SYNTH FLOW",
+    title: "RIFAS LA COSA",
     tags: ["React", "Node.js"],
     description:
       "High-performance automation platform for creative agencies to manage complex project timelines.",
     image:
-      "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80",
-    href: "#",
+      "/img/proyectos/rifaslacosa.png",
+    href: "https://rifaslacosa.com",
+    code: "#",
+  },
+  {
+    title: "AZUL JOYERIA",
+    tags: ["React", "Node.js"],
+    description:
+      "High-performance automation platform for creative agencies to manage complex project timelines.",
+    image:
+      "/img/proyectos/azuljoyeria.png",
+    href: "https://rifaslacosa.com",
+    code: "#",
+  },
+  {
+    title: "LANDING PAGE, PLPWEBS",
+    tags: ["React", "Node.js"],
+    description:
+      "High-performance automation platform for creative agencies to manage complex project timelines.",
+    image:
+      "/img/proyectos/plpwebs.png",
+    href: "https://lading-pageplp.netlify.app",
+    code: "#",
+  },
+  {
+    title: "MY CV PAGE",
+    tags: ["Astro", "Node.js"],
+    description:
+      "High-performance automation platform for creative agencies to manage complex project timelines.",
+    image:"/img/proyectos/cv.png",
+    href: "https://cvminimal.netlify.app",
     code: "#",
   },
 ];
@@ -32,7 +60,7 @@ const fadeUp = {
   show: (i: number) => ({
     opacity: 1,
     y: 0,
-    transition: { duration: 0.65, delay: i * 0.15, ease: [0.22, 1, 0.36, 1] },
+    transition: { duration: 0.65, delay: i * 0.15, ease: [0.22, 1, 0.36, 1] as [number, number, number, number] },
   }),
 };
 

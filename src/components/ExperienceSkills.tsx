@@ -5,20 +5,20 @@ import { Terminal } from "lucide-react";
 
 const experience = [
   {
-    period: "2022 — PRES.",
-    title: "Senior Systems Architect",
-    company: "TechFlow Solutions • Remote",
+    period: "2017 — 2022",
+    title: "Estudiante de Ingenieria en Tecnologias de la Informacion",
+    company: "Benemerita Universidad Autonoma de Puebla",
     description:
-      "Leading the migration of monolithic architectures to serverless microservices. Optimized CI/CD pipelines resulting in 40% faster deployment cycles.",
+      "Formación integral en fundamentos de programación, estructuras de datos, algoritmos y desarrollo de software.",
     highlight: true,
   },
   {
-    period: "2020 — 2022",
+    period: "2023 — 2025",
     title: "Full Stack Developer",
-    company: "Creative Core Agency • New York",
+    company: "DOCUPUEBLA • Puebla, Mexico",
     description:
-      "Developed complex React-based dashboards for Fortune 500 clients, focusing on data visualization and real-time analytics.",
-    highlight: false,
+      "Desarrollo y actualización de aplicaciones web para gestión y ventas de centros de impresión, optimizando procesos internos y mejorando la experiencia del usuario, capacitación continua a 4 centros de impresión en diferentes puntos de la republica mexicana.",
+    highlight: true,
   },
 ];
 
@@ -26,12 +26,8 @@ const skills = [
   "TypeScript",
   "React / Next.js",
   "Node.js",
-  "PostgreSQL",
-  "Docker",
-  "AWS",
-  "GraphQL",
   "TailwindCSS",
-  "Redis",
+  "Bootstrap"
 ];
 
 const fadeUp = {
@@ -39,7 +35,7 @@ const fadeUp = {
   show: (i: number) => ({
     opacity: 1,
     y: 0,
-    transition: { duration: 0.6, delay: i * 0.1, ease: [0.22, 1, 0.36, 1] },
+    transition: { duration: 0.6, delay: i * 0.1, ease: [0.22, 1, 0.36, 1] as [number, number, number, number] },
   }),
 };
 

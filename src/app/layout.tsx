@@ -24,11 +24,11 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-  title: "ARCHITECT.IO | Portfolio",
+  title: "LuisEduardoCR | Portfolio",
   description:
     "Full-stack engineer specializing in building resilient, high-performance web systems.",
   openGraph: {
-    title: "ARCHITECT.IO | Portfolio",
+    title: "LuisEduardoCR | Portfolio",
     description: "Full-stack engineer & digital architect.",
     type: "website",
   },
