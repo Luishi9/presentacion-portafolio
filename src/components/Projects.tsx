@@ -33,7 +33,7 @@ const projects = [
       "Sitio web de joyería en línea con catálogo de productos, ofreciendo una experiencia de usuario atractiva y hecha a la medida para el usuario.",
     image:
       "/img/proyectos/azuljoyeria.png",
-    href: "https://rifaslacosa.com",
+    href: "https://azul-joyeria.netlify.app",
     code: "#",
   },
   {
