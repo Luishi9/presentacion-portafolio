@@ -124,13 +124,6 @@ export default function Projects() {
                   >
                     <Link2 size={20} />
                   </a>
-                  <a
-                    href={project.code}
-                    className="bg-[#0f1930] text-[#dee5ff] p-4 rounded-full hover:scale-110 transition-transform"
-                    aria-label="View source code"
-                  >
-                    <Code2 size={20} />
-                  </a>
                 </div>
               </div>
 
