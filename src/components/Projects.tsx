@@ -4,21 +4,23 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import { Link2, Code2 } from "lucide-react";
 
+import { useTranslations } from "next-intl";
+
 const projects = [
   {
     title: "EL OVNI",
-    tags: ["Next.js", "Web3"],
+    tags: ["Vite", "Node.js", "TailwindCSS", "React"],
     description:
-      "A decentralized finance dashboard for tracking real-time asset performance with custom alerting systems.",
+      "Sistema de gestion de inventario y ventas para un local de comida rapida, con panel de administracion para gestionar productos, categorias, ventas, ademas de una interfaz de punto de venta optimizada para tablets.",
     image:"/img/proyectos/elovni.png",
     href: "https://elovni.netlify.app/login",
     code: "#",
   },
   {
     title: "RIFAS LA COSA",
-    tags: ["React", "Node.js"],
+    tags: ["Vite", "React", "Node.js", "TailwindCSS"],
     description:
-      "High-performance automation platform for creative agencies to manage complex project timelines.",
+      "Plataforma de rifas en linea que permite a los usuarios comprar boletos para participar en sorteos de productos y servicios, panel administrativo para la gestion de las rifas y venta de boletos, con una interfaz atractiva y fácil de usar.",
     image:
       "/img/proyectos/rifaslacosa.png",
     href: "https://rifaslacosa.com",
@@ -26,9 +28,9 @@ const projects = [
   },
   {
     title: "AZUL JOYERIA",
-    tags: ["React", "Node.js"],
+    tags: ["Bootstrap", "Firebase", "JavaScript"],
     description:
-      "High-performance automation platform for creative agencies to manage complex project timelines.",
+      "Sitio web de joyería en línea con catálogo de productos, ofreciendo una experiencia de usuario atractiva y hecha a la medida para el usuario.",
     image:
       "/img/proyectos/azuljoyeria.png",
     href: "https://rifaslacosa.com",
@@ -36,9 +38,9 @@ const projects = [
   },
   {
     title: "LANDING PAGE, PLPWEBS",
-    tags: ["React", "Node.js"],
+    tags: ["Bootstrap", "JavaScript"],
     description:
-      "High-performance automation platform for creative agencies to manage complex project timelines.",
+      "Landing page para empresa de desarrollo web, con un diseño moderno y atractivo, destacando los servicios ofrecidos y facilitando la conversión de visitantes en clientes potenciales.",
     image:
       "/img/proyectos/plpwebs.png",
     href: "https://lading-pageplp.netlify.app",
@@ -46,9 +48,9 @@ const projects = [
   },
   {
     title: "MY CV PAGE",
-    tags: ["Astro", "Node.js"],
+    tags: ["Astro", "Node.js", "TailwindCSS"],
     description:
-      "High-performance automation platform for creative agencies to manage complex project timelines.",
+      "Página web de CV minimalista, diseñada para mostrar la experiencia y habilidades de manera clara y atractiva.",
     image:"/img/proyectos/cv.png",
     href: "https://cvminimal.netlify.app",
     code: "#",
@@ -65,6 +67,9 @@ const fadeUp = {
 };
 
 export default function Projects() {
+
+  const t = useTranslations("Projects");
+
   return (
     <section id="projects" className="py-32 px-8 md:px-12 bg-[#060e20]">
       <div className="max-w-7xl mx-auto">
@@ -79,15 +84,14 @@ export default function Projects() {
         >
           <div className="space-y-4">
             <span className="font-[family-name:var(--font-space-grotesk)] text-[#81ecff] uppercase tracking-[0.3em] text-xs">
-              Portfolio
+              {t("section_title")}
             </span>
             <h2 className="font-[family-name:var(--font-manrope)] text-5xl font-bold text-[#dee5ff]">
-              Selected Works
+              {t("section_h2")}
             </h2>
           </div>
-          <p className="text-[#a3aac4] max-w-sm font-[family-name:var(--font-inter)] leading-relaxed">
-            A curated collection of digital products that combine clean code
-            with exceptional user experience.
+          <p className="text-[#a3aac4] max-w-sm font-[family-name:var(--font-inter)] leading-relaxed text-justify">
+            {t("p_descripction")}
           </p>
         </motion.div>
 
@@ -107,7 +111,7 @@ export default function Projects() {
               <div className="aspect-video bg-[#0f1930] rounded-xl overflow-hidden mb-6 relative">
                 <Image
                   src={project.image}
-                  alt={project.title}
+                  alt={t(`items.${i}.title`)}
                   fill
                   className="object-cover transition-transform duration-700 group-hover:scale-105"
                 />
@@ -145,7 +149,7 @@ export default function Projects() {
                 ))}
               </div>
               <p className="text-[#a3aac4] leading-relaxed font-[family-name:var(--font-inter)]">
-                {project.description}
+                {t(`items.${i}.description`)}
               </p>
             </motion.div>
           ))}

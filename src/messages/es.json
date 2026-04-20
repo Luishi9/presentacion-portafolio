@@ -1,0 +1,83 @@
+{
+  "Navbar": {
+    "home": "Inicio",
+    "projects": "Proyectos",
+    "experience": "Experiencia",
+    "skills": "Habilidades",
+    "contact": "Contacto",
+    "cta": "Contáctame"
+  },
+  "Hero": {
+    "badge": "Disponible para nuevos proyectos",
+    "subtitle": "Ingeniero full-stack especializado en construir sistemas web resilientes y de alto rendimiento. Trato cada línea de código como una base estructural para la excelencia.",
+    "cta_projects": "VER PROYECTOS",
+    "cta_contact": "PONTE EN CONTACTO",
+    "years_exp": "AÑOS DE EXPERIENCIA"
+  },
+  "ExperienceSkills": {
+    "section_label": "Capacidades",
+    "section_title": "Experiencia & Habilidades",
+    "academic_label": "Experiencia Académica y Laboral",
+    "h3_technologies": "Tecnologías",
+    "currently_learning": "Siempre aprendiendo. Actualmente explorando Next.js 15 para desarrollo web de última generación, con TailwindCSS para estilos modernos y eficientes.",
+    "jobs": [
+      {
+        "period": "2017 — 2022",
+        "title": "Estudiante de Ingeniería en Tecnologías de la Información",
+        "company": "Benemérita Universidad Autónoma de Puebla",
+        "description": "Formación integral en fundamentos de programación, estructuras de datos, algoritmos y desarrollo de software."
+      },
+      {
+        "period": "2023 — 2025",
+        "title": "Full Stack Developer",
+        "company": "DOCUPUEBLA • Puebla, México",
+        "description": "Desarrollo y actualización de aplicaciones web para gestión y ventas de centros de impresión, optimizando procesos internos y mejorando la experiencia del usuario, capacitación continua a 4 centros de impresión en diferentes puntos de la república mexicana."
+      },
+      {
+        "period": "2025 — 2026",
+        "title": "Freelance, Full Stack Developer",
+        "company": "Puebla, México",
+        "description": "Desarrollo de aplicaciones web personalizadas para clientes diversos, utilizando tecnologías modernas para crear soluciones eficientes y escalables, incluyendo sitios de comercio electrónico y paneles de administración."
+      }
+    ]
+  },
+  "Projects": {
+    "section_h2": "Trabajo Seleccionado",
+    "section_title": "Proyectos",
+    "p_descripction": "Una colección de productos digitales que combinan código limpio con una experiencia de usuario excepcional, desarrolladas para satisfacer las necesidades de cada usuario.",
+    "items": [
+      {
+        "title": "EL OVNI",
+        "description": "Sistema de gestión de inventario y ventas para un local de comida rápida, con panel de administración para gestionar productos, categorías, ventas, además de una interfaz de punto de venta optimizada para tablets."
+      },
+      {
+        "title": "RIFAS LA COSA",
+        "description": "Plataforma de rifas en línea que permite a los usuarios comprar boletos para participar en sorteos de productos y servicios, panel administrativo para la gestión de las rifas y venta de boletos, con una interfaz atractiva y fácil de usar."
+      },
+      {
+        "title": "AZUL JOYERIA",
+        "description": "Sitio web de joyería en línea con catálogo de productos, ofreciendo una experiencia de usuario atractiva y hecha a la medida para el usuario."
+      },
+      {
+        "title": "LANDING PAGE, PLPWEBS",
+        "description": "Landing page para empresa de desarrollo web, con un diseño moderno y atractivo, destacando los servicios ofrecidos y facilitando la conversión de visitantes en clientes potenciales."
+      },
+      {
+        "title": "MY CV PAGE",
+        "description": "Página web de CV minimalista, diseñada para mostrar la experiencia y habilidades de manera clara y atractiva."
+      }
+    ]
+  },
+  "Contact": {
+    "section_label": "Ponte en contacto",
+    "section_title": "Hablemos.",
+    "subtitle": "Encuéntrame en cualquiera de estas plataformas."
+  },
+  "Footer": {
+    "home": "Inicio",
+    "projects": "Proyectos",
+    "experience": "Experiencia",
+    "contact": "Contacto",
+    "copyright": "Construido con Next.js & intencionalidad."
+  }
+}

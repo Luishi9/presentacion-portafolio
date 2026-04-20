@@ -1,0 +1,83 @@
+{
+  "Navbar": {
+    "home": "Home",
+    "projects": "Projects",
+    "experience": "Experience",
+    "skills": "Skills",
+    "contact": "Contact",
+    "cta": "Contact Me"
+  },
+  "Hero": {
+    "badge": "Available for new projects",
+    "subtitle": "Full-stack engineer specializing in building resilient, high-performance web systems. I treat every line of code as a structural foundation for excellence.",
+    "cta_projects": "VIEW PROJECTS",
+    "cta_contact": "GET IN TOUCH",
+    "years_exp": "YEARS OF EXPERIENCE"
+  },
+  "ExperienceSkills": {
+    "section_label": "Capabilities",
+    "section_title": "Experience & Skills",
+    "academic_label": "Academic & Work Experience",
+    "h3_technologies": "Technologies",
+    "currently_learning": "Always learning. Currently exploring Next.js 15 for cutting-edge web development, with TailwindCSS for modern and efficient styles.",
+    "jobs": [
+      {
+        "period": "2017 — 2022",
+        "title": "Information Technology Engineering Student",
+        "company": "Benemerita Universidad Autonoma de Puebla",
+        "description": "Comprehensive training in programming fundamentals, data structures, algorithms, and software development."
+      },
+      {
+        "period": "2023 — 2025",
+        "title": "Full Stack Developer",
+        "company": "DOCUPUEBLA • Puebla, Mexico",
+        "description": "Development and updates of web applications for print center management and sales, optimizing internal processes and improving user experience, continuous training for 4 print centers at different locations across Mexico."
+      },
+      {
+        "period": "2025 — 2026",
+        "title": "Freelance, Full Stack Developer",
+        "company": "Puebla, Mexico",
+        "description": "Development of custom web applications for diverse clients, using modern technologies to create efficient and scalable solutions, including e-commerce sites and administration dashboards."
+      }
+    ]
+  },
+  "Projects": {
+    "section_h2": "Selected Work",
+    "section_title": "Projects",
+    "p_descripction": "A collection of digital products that combine clean code with an exceptional user experience, developed to meet the needs of each user.",
+    "items": [
+      {
+        "title": "EL OVNI",
+        "description": "Inventory and sales management system for a fast food restaurant, with an admin panel to manage products, categories, and sales, plus a point-of-sale interface optimized for tablets."
+      },
+      {
+        "title": "RIFAS LA COSA",
+        "description": "Online raffle platform that allows users to buy tickets to participate in product and service draws, admin panel for raffle management and ticket sales, with an attractive and easy-to-use interface."
+      },
+      {
+        "title": "AZUL JOYERIA",
+        "description": "Online jewelry store with a product catalog, offering an attractive and custom-made user experience."
+      },
+      {
+        "title": "LANDING PAGE, PLPWEBS",
+        "description": "Landing page for a web development company with a modern and attractive design, highlighting offered services and facilitating conversion of visitors into potential clients."
+      },
+      {
+        "title": "MY CV PAGE",
+        "description": "Minimalist CV webpage designed to showcase experience and skills in a clear and attractive way."
+      }
+    ]
+  },
+  "Contact": {
+    "section_label": "Get in touch",
+    "section_title": "Let's talk.",
+    "subtitle": "Find me on any of these platforms."
+  },
+  "Footer": {
+    "home": "Home",
+    "projects": "Projects",
+    "experience": "Experience",
+    "contact": "Contact",
+    "copyright": "Built with Next.js & intentionality."
+  }
+}

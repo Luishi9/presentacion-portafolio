@@ -3,6 +3,8 @@
 import { motion } from "framer-motion";
 import { Terminal } from "lucide-react";
 
+import { useTranslations } from "next-intl";
+
 const experience = [
   {
     period: "2017 — 2022",
@@ -51,6 +53,9 @@ const fadeUp = {
 };
 
 export default function ExperienceSkills() {
+
+  const t = useTranslations("ExperienceSkills");
+
   return (
     <section
       id="experience"
@@ -67,10 +72,10 @@ export default function ExperienceSkills() {
           className="mb-20 space-y-4"
         >
           <span className="font-[family-name:var(--font-space-grotesk)] text-[#81ecff] uppercase tracking-[0.3em] text-xs">
-            Capacidades
+            {t("section_label")}
           </span>
           <h2 className="font-[family-name:var(--font-manrope)] text-5xl font-bold text-[#dee5ff]">
-            Experiencia &amp; Habilidades
+            {t("section_title")}
           </h2>
         </motion.div>
 
@@ -87,7 +92,7 @@ export default function ExperienceSkills() {
             className="bento-card md:col-span-8 bg-[#0f1930] p-8 rounded-xl overflow-hidden"
           >
             <h3 className="font-[family-name:var(--font-space-grotesk)] text-xs text-[#a3aac4] uppercase mb-8 tracking-widest">
-              Experiencia Academica y Laboral
+              {t("academic_label")}
             </h3>
             <div className="space-y-12">
               {experience.map((job, i) => (
@@ -100,15 +105,15 @@ export default function ExperienceSkills() {
                       job.highlight ? "text-[#81ecff]" : "text-[#a3aac4]/50"
                     }`}
                   >
-                    {job.period}
+                    {t(`jobs.${i}.period`)}
                   </span>
                   <div>
                     <h4 className="text-xl font-bold text-[#dee5ff]">
-                      {job.title}
+                      {t(`jobs.${i}.title`)}
                     </h4>
                     <p className="text-[#a3aac4] text-sm mb-3">{job.company}</p>
-                    <p className="text-[#a3aac4] leading-relaxed text-sm">
-                      {job.description}
+                    <p className="text-justify text-[#a3aac4] leading-relaxed text-sm">
+                      {t(`jobs.${i}.description`)}
                     </p>
                   </div>
                 </div>
@@ -126,7 +131,7 @@ export default function ExperienceSkills() {
             className="bento-card md:col-span-4 bg-[#000000] p-8 rounded-xl border-l-2 border-[#81ecff] overflow-hidden"
           >
             <h3 className="font-[family-name:var(--font-space-grotesk)] text-xs text-[#a3aac4] uppercase mb-8 tracking-widest">
-              Core Stack
+              {t("h3_technologies")}
             </h3>
             <div className="flex flex-wrap gap-2">
               {skills.map((skill) => (
@@ -141,9 +146,8 @@ export default function ExperienceSkills() {
 
             <div className="mt-12 p-5 bg-[#141f38] rounded-lg">
               <Terminal size={20} className="text-[#81ecff] mb-2" />
-              <p className="text-xs font-[family-name:var(--font-space-grotesk)] text-[#a3aac4] leading-relaxed">
-                Siempre aprendiendo. Actualmente explorando Next.js 15 para desarrollo web de última generación, 
-                con tailwindcss 3.3 para estilos modernos y eficientes.
+              <p className="text-justify text-xs font-[family-name:var(--font-space-grotesk)] text-[#a3aac4] leading-relaxed">
+                {t("currently_learning")}
               </p>
             </div>
           </motion.div>

@@ -3,6 +3,8 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 
+import { useTranslations } from "next-intl";
+
 const fadeUp = {
   hidden: { opacity: 0, y: 32 },
   show: (i: number) => ({
@@ -13,6 +15,9 @@ const fadeUp = {
 };
 
 export default function Hero() {
+
+  const t = useTranslations("Hero");
+
   return (
     <section
       id="home"
@@ -30,7 +35,7 @@ export default function Hero() {
             className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-[#0f1930] border border-[#40485d]/20 font-[family-name:var(--font-space-grotesk)] text-sm text-[#81ecff]"
           >
             <span className="w-2 h-2 rounded-full bg-[#81ecff] animate-pulse" />
-            Disponible para nuevos proyectos
+            {t("badge")}
           </motion.div>
 
           {/* Headline */}
@@ -56,9 +61,7 @@ export default function Hero() {
             animate="show"
             className="font-[family-name:var(--font-inter)] text-lg text-[#a3aac4] max-w-lg leading-relaxed"
           >
-            Ingeniero full-stack especializado en construir sistemas web resilientes 
-            y de alto rendimiento. Trato cada línea de código como una base estructural
-            para la excelencia.
+            {t("subtitle")}
           </motion.p>
 
           {/* Buttons */}
@@ -73,13 +76,13 @@ export default function Hero() {
               href="#projects"
               className="btn-gradient text-[#003840] px-8 py-4 rounded-[4px] font-[family-name:var(--font-space-grotesk)] font-bold tracking-wide text-sm"
             >
-              VER PROYECTOS
+              {t("cta_projects")}
             </a>
             <a
               href="#contact"
               className="btn-tertiary font-[family-name:var(--font-space-grotesk)] text-[#dee5ff] hover:text-[#81ecff] transition-colors text-sm pb-0.5"
             >
-              PONTE EN CONTACTO
+              {t("cta_contact")}
             </a>
           </motion.div>
         </div>
@@ -109,7 +112,7 @@ export default function Hero() {
               3+
             </div>
             <div className="font-[family-name:var(--font-inter)] text-xs text-[#a3aac4] uppercase tracking-widest mt-1">
-              AÑOS DE EXPERIENCIA
+              {t("years_exp")}
             </div>
           </div>
         </motion.div>
